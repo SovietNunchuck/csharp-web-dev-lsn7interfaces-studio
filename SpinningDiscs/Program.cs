@@ -16,8 +16,14 @@ namespace SpinningDiscs
             testCD.SpinDisc();
             testDVD.SpinDisc();
 
+            Console.WriteLine("\n*****\n");
+
             testCD.ReportData();
             testDVD.ReportData();
+
+            Console.WriteLine("*****\n");
+
+
 
         }
     }
