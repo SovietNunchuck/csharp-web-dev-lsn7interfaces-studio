@@ -7,6 +7,12 @@ namespace SpinningDiscs
     {
         public DVD(string name, int capacity, List<string> contents, string discType) : base(name, capacity, contents, discType) { }
 
+
+        public void WriteData()
+        {
+
+        }
+
         public override string ToString()
         {
             string formattedContents = "";

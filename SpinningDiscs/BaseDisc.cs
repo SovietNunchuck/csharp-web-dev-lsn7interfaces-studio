@@ -6,7 +6,7 @@ namespace SpinningDiscs
 {
     public abstract class BaseDisc
     {
-        public string Name { get; }
+        public string Name { get; set; }
         public int Capacity { get; }
         public List<string> Contents { get; set; }
         public int[] SpinRate { get; }

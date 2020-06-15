@@ -12,7 +12,7 @@ namespace SpinningDiscs
 
         //void StoreData();
 
-        //void WriteData();
+        void WriteData();
 
         //void ReadData();
 
