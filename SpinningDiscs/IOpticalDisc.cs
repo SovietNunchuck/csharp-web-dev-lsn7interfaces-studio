@@ -14,7 +14,7 @@ namespace SpinningDiscs
 
         void WriteData();
 
-        //void ReadData();
+        void ReadData();
 
         void ReportData();
 

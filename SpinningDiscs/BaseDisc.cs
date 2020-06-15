@@ -40,5 +40,11 @@ namespace SpinningDiscs
         {
             Console.WriteLine(this.ToString());
         }
+
+        public void ReadData()
+        {
+            Console.WriteLine("\nReading data...\nHere's your data:");
+            ReportData();
+        }
     }
 }

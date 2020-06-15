@@ -7,18 +7,18 @@ namespace SpinningDiscs
     public class CD : BaseDisc, IOpticalDisc
     {
         public string Artist { get; set; }
-        private bool _writable = false;
+        private bool _writeable = false;
 
         public CD(string artist, string name, int capacity, List<string> contents, string discType) : base(name, capacity, contents, discType)
         {
             Artist = artist;
         }
 
-        public CD(int capacity) : this("None", "None", capacity, new List<string> { }, "CD") { _writable = true; }
+        public CD(int capacity) : this("None", "None", capacity, new List<string> { }, "CD") { _writeable = true; }
 
         public void WriteData()
         {
-            if (_writable)
+            if (_writeable)
             {
                 int trackCount = 0;
                 Console.WriteLine("Initiating CD burn...\nCD Artist: ");
@@ -60,7 +60,7 @@ namespace SpinningDiscs
                 $"Artist: {Artist}\n" +
                 $"Album Name: {Name}\n" +
                 $"Capacity: {Capacity} MB\n" +
-                $"Contents:\n{formattedContents}\n";
+                $"Contents:\n{formattedContents}";
             return formattedString;
         }
 

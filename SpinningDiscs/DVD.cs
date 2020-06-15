@@ -10,7 +10,7 @@ namespace SpinningDiscs
 
         public void WriteData()
         {
-
+            Console.WriteLine("DVD has been formatted so that it cannot be overwritten.");
         }
 
         public override string ToString()
@@ -25,7 +25,7 @@ namespace SpinningDiscs
             string formattedString = $"Disc Type: {DiscType}\n" +
                 $"Film Name: {Name}\n" +
                 $"Capacity: {Capacity} MB\n" +
-                $"Contents:\n{formattedContents}\n";
+                $"Contents:\n{formattedContents}";
             return formattedString;
         }
 
